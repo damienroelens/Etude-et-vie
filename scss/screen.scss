@@ -1,0 +1,106 @@
+@import "compass";
+@import "compass/reset";
+
+body{
+	width: 1100px;
+	margin: auto;
+}
+
+/* ---------------------------- DROPDOWN MENU -----------------------------*/
+
+nav {
+	margin: 20px auto; 
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav>ul {
+	width:100%;
+	background: #efefef; 
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	&>li {
+		width:20%;
+		box-sizing:border-box;
+		float: left;
+		position:relative;
+	}
+}
+nav ul li:hover {
+	background: #4b545f;
+	& a{
+		color: #fff;
+	}
+}
+
+nav ul li a {
+	display: block; 
+	padding: 15px 10px;
+	color: #757575; 
+	text-decoration: none;
+	text-align: center;
+}
+	
+		
+nav ul ul{
+	background: #5f6975; 
+	position: absolute; 
+	top: 100%;
+	& li{
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a; 
+		position: relative;
+		& a{
+			padding: 15px 40px;
+			color: #fff;
+			text-align:left;
+			&:hover{
+				background: #4b545f;
+			}
+		}
+	}
+}
+
+section div{
+	margin:25px;
+	width:500px;
+	box-sizing:border-box;
+	display:inline-block;
+}
+
+section div.right{
+	float:right;
+}
+section div.left{
+	float:left;
+}
+
+section div.right>ul li, section div.left ul li{
+	display:block;
+	float:left;
+	display: inline-block;
+	width: 200px;
+	margin:25px;
+	height: 300px;
+}
+
+footer{
+	clear:both;
+	& ul{
+		@include horizontal-list;
+		& li {
+			width:25%;
+			box-sizing:border-box;
+			text-align: center;
+		}
+	}
+
+}

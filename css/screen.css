@@ -1,0 +1,169 @@
+/* line 17, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+/* line 103, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 32, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 4, ../scss/screen.scss */
+body {
+  width: 1100px;
+  margin: auto; }
+
+/* ---------------------------- DROPDOWN MENU -----------------------------*/
+/* line 11, ../scss/screen.scss */
+nav {
+  margin: 20px auto; }
+
+/* line 15, ../scss/screen.scss */
+nav ul ul {
+  display: none; }
+
+/* line 19, ../scss/screen.scss */
+nav ul li:hover > ul {
+  display: block; }
+
+/* line 23, ../scss/screen.scss */
+nav > ul {
+  width: 100%;
+  background: #efefef;
+  list-style: none;
+  position: relative;
+  display: inline-block; }
+/* line 29, ../scss/screen.scss */
+nav > ul > li {
+  width: 20%;
+  box-sizing: border-box;
+  float: left;
+  position: relative; }
+
+/* line 36, ../scss/screen.scss */
+nav ul li:hover {
+  background: #4b545f; }
+/* line 38, ../scss/screen.scss */
+nav ul li:hover a {
+  color: #fff; }
+
+/* line 43, ../scss/screen.scss */
+nav ul li a {
+  display: block;
+  padding: 15px 10px;
+  color: #757575;
+  text-decoration: none;
+  text-align: center; }
+
+/* line 52, ../scss/screen.scss */
+nav ul ul {
+  background: #5f6975;
+  position: absolute;
+  top: 100%; }
+/* line 56, ../scss/screen.scss */
+nav ul ul li {
+  float: none;
+  border-top: 1px solid #6b727c;
+  border-bottom: 1px solid #575f6a;
+  position: relative; }
+/* line 61, ../scss/screen.scss */
+nav ul ul li a {
+  padding: 15px 40px;
+  color: #fff;
+  text-align: left; }
+/* line 65, ../scss/screen.scss */
+nav ul ul li a:hover {
+  background: #4b545f; }
+
+/* line 72, ../scss/screen.scss */
+section div {
+  margin: 25px;
+  width: 500px;
+  box-sizing: border-box;
+  display: inline-block; }
+
+/* line 79, ../scss/screen.scss */
+section div.right {
+  float: right; }
+
+/* line 82, ../scss/screen.scss */
+section div.left {
+  float: left; }
+
+/* line 86, ../scss/screen.scss */
+section div.right > ul li, section div.left ul li {
+  display: block;
+  float: left;
+  display: inline-block;
+  width: 200px;
+  margin: 25px;
+  height: 300px; }
+
+/* line 95, ../scss/screen.scss */
+footer {
+  clear: both; }
+/* line 97, ../scss/screen.scss */
+footer ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1; }
+/* line 60, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+footer ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px; }
+/* line 48, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+footer ul li:first-child, footer ul li.first {
+  padding-left: 0; }
+/* line 49, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+footer ul li:last-child {
+  padding-right: 0; }
+/* line 50, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+footer ul li.last {
+  padding-right: 0; }
+/* line 99, ../scss/screen.scss */
+footer ul li {
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center; }
