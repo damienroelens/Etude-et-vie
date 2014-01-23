@@ -9,9 +9,24 @@ function initialize(){
 	for(var i=0;i<achat.length;i++){
 		addEventI(i);
 	}
+	//Creation d'évènements pour les boutons d'ajout au panier
+	var textPanier,
+		pNode = document.createElement('p');
+	var divPanier = document.getElementsByClassName('panier')[0].children[0];
+	
+	if(JSON.parse(localStorage['donn']).length == 0){
+
+		textPanier = document.createTextNode('0 articles dans le panier');
+	} else {
+		textPanier = document.createTextNode(JSON.parse(localStorage['donn']).length+' article(s) dans le panier');
+	}
+
+	pNode.appendChild(textPanier);
+	divPanier.appendChild(pNode);
+	//creation et comptage du panier
 
 	if(location.href == "file:///C:/Users/vdb040/Desktop/Etudes%20et%20vie/html/panier.html"){
-		console.log(localStorage['donn'].length);
+		
 		if(localStorage['donn'].length>2){
 			var list = JSON.parse(localStorage['donn']);
 			var container = document.createElement('ul');
@@ -71,6 +86,7 @@ function addToCart(e){
 	oldItems.push(donnees);
 
 	localStorage['donn'] = JSON.stringify(oldItems);
+	location.reload();
 }
 
 function removeFromCart(e){
